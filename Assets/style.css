@@ -1,0 +1,169 @@
+*{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Arial, sans-serif;
+}
+
+.body {
+    background-color: rgb(197, 195, 195);
+}
+
+/* */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(33, 46, 82);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+.brandname {
+    margin: 0 0 0 25px;
+    align-items: flex-start;
+}
+    .brandname a {
+        color: white;
+        text-shadow: 1.5px 1.5px black;
+    }
+
+    .brandname, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .brandname a, .navigation a {
+        text-decoration: none;
+    }
+
+.navigation {
+    display: flex;
+    margin-left: 50%;
+    align-items: center;
+    padding: 10px;
+}
+
+    .navigation a {
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    margin: 10px;
+    font-size:18px;
+    }
+
+    .navigation a:hover {
+        background: grey;
+    }
+
+    /* About me content with image */
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 50%;
+    padding-right: 15px;
+    height: 400px;
+    color: black;
+    border-right: 2px solid black;
+    font-weight: 500;
+}
+
+    .aboutme h1 {
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+
+    .aboutme p {
+        text-indent: 25px;;
+    }
+
+
+/* Work display */
+
+.workheader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 75px;
+        margin-top: 50px;
+        background-color: rgb(33, 46, 82);
+        border: 3px solid rgb(0, 0, 0);
+}
+    .workheader h1 {
+            display: flex;
+            color: white;
+            text-shadow: 1.5px 1.5px black;
+            text-transform: uppercase;
+    }
+
+/* Main project (largest) */
+
+.projectscontainer1 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .workitem1 {
+        flex: 1;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+/* Second container of projects (pair) */
+
+.projectscontainer2 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .workitem2,.workitem3 {
+        flex: 1 1;
+        margin: 20px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+/* Third container of projects (pair) */
+
+.projectscontainer3 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .workitem4,.workitem5 {
+        flex: 1 1;
+        margin: 20px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+/* Contact Information */
+
+.contactheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    margin-top: 50px;
+    background-color: rgb(33, 46, 82);
+    border: 3px solid rgb(0, 0, 0);
+}
+    .contactheader h1 {
+        display: flex;
+        color: white;
+        text-shadow: 1.5px 1.5px black;
+        text-transform: uppercase;
+    }
+
+.contactme {
+    display: flex;
+    flex-direction: column;
+
+}
+
+    .email,.phone {
+        text-align: center;
+    }
