@@ -7,9 +7,12 @@
     margin: auto;
 }
 
+/* Background image (sourced from royalty free site) */
+
 body {
-    background-image: url("https://images.pexels.com/photos/168452/pexels-photo-168452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-color: #cccccc;
+    background-size: cover;
 }
 
 /* Delcared global variables */
@@ -112,7 +115,7 @@ header {
     align-items: center;
 }
 
-/* Main project (largest) */
+/* Highlighted project (largest) */
 
 .projectscontainer1 {
     display:flex;
@@ -141,7 +144,7 @@ header {
         color: var(--lightgreen);
     }
 
-/* Work display */
+/* Header separating highlighted project from other work */
 
 .workheader {
     display: flex;
@@ -149,10 +152,13 @@ header {
     justify-content: center;
     width: 100%;
     height: 75px;
-    margin-top: 5px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     border: 2px solid black;
     border-radius: 30px 30px;
     background-color: var(--headercolor);
+    font-size: var(--sectionheader);
+    color: var(--lightgreen);
 }
     .workheader h1 {
             display: flex;
@@ -162,7 +168,7 @@ header {
             text-transform: uppercase;
     }
 
-/* Work Section */
+/* Colored borders and formatting for other projects */
 
 .work h2 {
     color: var(--lightgreen);
@@ -174,40 +180,22 @@ header {
     padding: 40px;
 }
 
-.workitem2,.workitem3,.workitem4,.workitem5 {
-    border: 2px solid black;
-    border-radius: 30px 30px;
-    background-color: var(--headercolor);
-}
+/* Formatting for other projects */
 
-/* Second container of projects (pair) */
-
-.projectscontainer2 {
+.projectscontainer2, .projectscontainer3 {
     display:flex;
     align-items: center;
     justify-content: space-around;
 }
-    .workitem2,.workitem3 {
+    .workitem2,.workitem3,.workitem4,.workitem5{
         flex: 1 1;
         margin: 20px;
         border: 2px solid black;
+        border-radius: 30px 30px;
+        background-color: var(--headercolor);
         text-align: center;
     }
-
-/* Third container of projects (pair) */
-
-.projectscontainer3 {
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-}
-    .workitem4,.workitem5 {
-        flex: 1 1;
-        margin: 20px;
-        border: 2px solid black;
-        text-align: center;
-    }
-
+    
 /* Contact Information */
 
 footer {
@@ -215,8 +203,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 75px;
-    margin-top: 50px;
+    margin-bottom: 1%;
     border: 2px solid black;
     border-radius: 30px 30px;
     background-color: var(--headercolor);
@@ -256,23 +243,22 @@ footer {
 /* Media queries for responsive design */
 
 @media only screen and (max-width: 800px) {
-    div.brandname {
+    div.brandname, div.myinfo h1 {
       font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 620px) {
-    div.brandname {
+    div.brandname, div.myinfo h1 {
       font-size: 24px;
     }
 }
 
-@media only screen and (max-width: 450px) {
-    div.brandname {
+@media only screen and (max-width: 500px) {
+    div.brandname, div.myinfo h1 {
       font-size: 14px;
     }
 }
-
 
 @media only screen and (max-width: 800px) {
     div.navmenu a {
@@ -314,5 +300,47 @@ footer {
 @media only screen and (max-width: 750px) {
     section.aboutme h1 {
         margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.workheader h1, div.workitem1 h2, div.projectscontainer2 h2, div.projectscontainer3 h2, div.contactheader h1 {
+      font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    div.workheader h1, div.workitem1 h2, div.projectscontainer2 h2, div.projectscontainer3 h2, div.contactheader h1 {
+      font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.workheader h1, div.workitem1 h2, div.projectscontainer2 h2, div.projectscontainer3 h2, div.contactheader h1{
+      font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    div.contactme a {
+      font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.contactme a {
+      font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    div.contactme a {
+      font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.contactme a {
+      font-size: 8px;
     }
 }
