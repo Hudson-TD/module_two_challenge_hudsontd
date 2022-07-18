@@ -4,10 +4,9 @@ In this assignment we were tasked with creating a portfolio website that will ho
 
 Live Website Link:
 
-
+https://hudson-td.github.io/module_two_challenge_hudsontd/
 
 
 Screenshot:
 
-
-
+[![Website-Screenshot.png](https://i.postimg.cc/7Lg4bRdH/Website-Screenshot.png)](https://postimg.cc/sBDqNT3q)
