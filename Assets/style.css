@@ -15,6 +15,10 @@ body {
     background-size: cover;
 }
 
+body img {
+    border: 5px solid var(--lightgreen);
+}
+
 /* Delcared global variables */
 
 :root{
@@ -177,7 +181,7 @@ header {
 }
 
 .work img {
-    padding: 40px;
+    margin-bottom: 40px;
 }
 
 /* Formatting for other projects */
