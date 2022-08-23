@@ -133,6 +133,10 @@ header {
         margin-bottom: 50px;
     }
 
+    .workitem1 h1 {
+        margin-bottom: 10px;;
+    }
+
     .workitem1 h2 {
         display: flex;
         align-items: center;
